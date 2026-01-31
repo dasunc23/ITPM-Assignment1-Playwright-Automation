@@ -275,7 +275,7 @@ npx playwright show-report
 **Registration Number**: IT23437920  
 **Course**: IT3040 - ITPM  
 **Institution**: SLIIT  
-**Year**: Year 3, Semester 1
+**Year**: Year 3, Semester 2
 
 ---
 
