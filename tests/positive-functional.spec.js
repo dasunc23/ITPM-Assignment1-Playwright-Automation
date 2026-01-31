@@ -134,14 +134,11 @@ for (const scenario of testCases) {
             
             await inputArea.click();
             
-            // Fix 1: Speed up typing and increase action timeout to 60 seconds
+            // Speed up typing and increase action timeout to 60 seconds
             await inputArea.pressSequentially(scenario.input, { 
                 delay: 30, 
                 timeout: 60000 
             });
-
-            // Fix 2: Use exact: false to handle invisible character differences
-            // Fix 3: Standardize timeout to 30s (more than enough once typed)
             await expect(page.getByText(scenario.expected, { exact: false }))
                 .toBeVisible({ timeout: 30000 });
             
